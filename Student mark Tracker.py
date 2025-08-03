@@ -12,7 +12,7 @@ for i in range(num_students):
         marks.append(mark)
         students[name] = marks
 
-def grade(avg):
+def get_grade(avg):
     if avg >= 90:
         return "A+"
     elif avg >= 80:
@@ -30,10 +30,11 @@ def grade(avg):
 for name,marks in students.items():
     total = sum(marks)
     average = total/len(marks)
-    grade = grade(average)
+    grade = get_grade(average)
 
     print(f"Name : {name}")
     print(f"Marks : {marks}")
     print(f"Total : {total}")
     print(f"Average : {average}")
     print(f"Grade : {grade}")
+
