@@ -10,7 +10,7 @@ for i in range(num_students):
     for j in range(subjects):
         mark = int(input(f"Enter mark{j+1}: "))
         marks.append(mark)
-        students[name] = marks
+    students[name] = marks
 
 def get_grade(avg):
     if avg >= 90:
@@ -37,4 +37,5 @@ for name,marks in students.items():
     print(f"Total : {total}")
     print(f"Average : {average}")
     print(f"Grade : {grade}")
+
 
